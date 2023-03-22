@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>productSlider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="articleKatakog.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="error.css">
+
+
+  <link href="itc-slider.css" rel="stylesheet">
+  <script defer src="itc-slider.js"></script>
+  <link rel="stylesheet" href="itc-slider-kartochka.css">
+  <link rel="stylesheet" href="kartochka.css">
+  <link rel="stylesheet" href="sliderNew.css">
+  <script defer src="itc-slider-kartochka.js"></script>
+  <script src="myScript"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
+  <link rel="stylesheet" href="productSlider.css">
+    
+</head>
+
+<body>
+
+
+  <script>
+
+    function loadErrorContent1() {
+      $('#content-1').load('ERRORS.html');
+
+    }
+    function loadErrorContent2() {
+      $('#content-2').load('ERRORS.html');
+
+    }
+    function loadErrorContent4() {
+      $('#content-4').load('ERRORS.html');
+
+    }
+    window.onload = function () {
+      document.getElementById("NewProduct").click();
+      loadContent3();
+      // loadContent5();
+    };
+
+
+    function loadContent3() {
+      $('#content-3').load('KARTOCHKA1.html');
+    }
+
+    // document.addEventListener("DOMContentLoaded", loadContent3);
+
+    // function loadContent5() {
+    //   $('#div1').load('SLIDER1NEW.html');
+    // }
+
+    // document.addEventListener("DOMContentLoaded", loadContent5());
+
+    // function clicContent() {
+    //   document.getElementById("NewProduct").click();
+    // }
+
+    // document.addEventListener("DOMContentLoaded", clicConten);
+
+
+    // function readyMenu() {
+    //   $('#accordionMenu').load('accordMenu.html');
+    // }
+
+    // document.addEventListener("DOMContentLoaded", readyMenu);
+
+
+    // function katalogHiden() {
+    //     var kat = document.getElementById('katalog');
+    //     kat.style.display = 'none'
+    // }
+  </script>
+
+
+  <article class="product-menu">
+    <div class="container">
+
+      <!-- <h1 style="font-size: 20px; text-align: center;">Табы на чистом CSS (на основе :target)</h1> -->
+
+      <div class="tabs">
+        <div id="content-4">
+          Содержимое 4...
+        </div>
+        <div id="content-2">
+          Содержимое 2...
+        </div>
+        <div id="content-3">
+
+          Содержимое 3...
+        </div>
+        <div id="content-1">
+          Содержимое 1...
+        </div>
+        <div class="tabs__links">
+          <a href="#content-1" onclick="loadErrorContent1()">Хиты продаж</a>
+          <a href="#content-2" onclick="loadErrorContent2()">Самые популярные</a>
+          <a id="NewProduct" href="#content-3">Новые поступления</a>
+          <a href="#content-4" onclick="loadErrorContent4()">Акционные товары</a>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+  <div id="div1">
+
+  </div>
+
+</body>
+
+</html>

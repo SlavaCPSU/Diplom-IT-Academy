@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>productSlider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="articleKatakog.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="error.css">
+
+  <script src="myScript.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
+  <link rel="stylesheet" href="productSlider.css">
+
+  <link rel="stylesheet" href="sliderKartochkaLast.css">
+
+</head>
+
+<body>
+
+
+  <script>
+
+    function loadErrorContent1() {
+      $('#content-1').load('ERRORS.html');
+
+    }
+    function loadErrorContent2() {
+      $('#content-2').load('ERRORS.html');
+
+    }
+    function loadErrorContent4() {
+      $('#content-4').load('ERRORS.html');
+
+    }
+    window.onload = function () {
+      document.getElementById("NewProduct").click();
+      loadContent3();
+
+    };
+
+    function loadContent3() {
+      $('#content-3').load('KARTOCHKA1.html');
+    }
+
+  </script>
+
+
+  <article class="product-menu">
+    <div class="container">
+
+
+      <div class="tabs">
+        <div id="content-4">
+
+        </div>
+        <div id="content-2">
+
+        </div>
+        <div id="content-3">
+
+
+        </div>
+        <div id="content-1">
+
+        </div>
+        <div class="tabs__links">
+          <a href="#content-1" onclick="loadErrorContent1()">Хиты продаж</a>
+          <a href="#content-2" onclick="loadErrorContent2()">Самые популярные</a>
+          <a id="NewProduct" href="#content-3">Новые поступления</a>
+          <a href="#content-4" onclick="loadErrorContent4()">Акционные товары</a>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+
+</body>
+
+</html>

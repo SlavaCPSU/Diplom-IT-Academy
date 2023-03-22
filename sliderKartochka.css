@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.kartochkaProdukt {
+    display: flex;
+    flex-direction: column;
+    /* border: blue 1px solid; */
+    max-width: 289px;
+    max-height: 454px;
+    background-color: #F5F5F5;
+
+}
+
+
+.kartochka {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* border: 1px green solid; */
+
+
+}
+
+.footerProduct {
+    position: absolute;
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+    /* flex-basis: 289px; */
+    /* border: 1px solid blue; */
+    width: 229px;
+    z-index: 2;
+    margin-left: 30px;
+
+}
+
+.footerProduct p {
+
+    font-family: Jost Font;
+    font-size: 15px;
+    line-height: 19px;
+    color: #BB8C5F;
+    padding: 4px 18px 6px 10px;
+    /* z-index: 2; */
+
+
+}
+
+.footerProduct a {
+    margin-top: auto;
+    margin-bottom: auto;
+    /* z-index: 2; */
+}
+
+.footerProduct div {
+
+    width: 85px;
+    /* height: 29px; */
+    background: url('./img/NewProduct.svg') no-repeat left;
+    /* z-index: 2; */
+}
+
+
+
+.kartochkaPodpis {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.kartochkaPodpis p {
+    font-family: Jost;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.kartochkaCena {
+    color: #BB8C5F;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 10%;
+}
+
+.kartochkaProdukt:hover {
+    max-height: 454px;
+    transform: scale(1.01);
+
+
+}
+
+.kartochkaProdukt button {
+    display: none;
+}
+
+.kartochkaProdukt:hover button {
+    /* display: block; */
+    margin: auto;
+    border: none;
+    color: #BB8C5F;
+    /* margin: auto; */
+    display: flex;
+    height: 50px;
+    width: 259px;
+    background: url('./img/Rectangle 68.svg') no-repeat center;
+    cursor: pointer;
+
+}
+
+.kartochkaProdukt:hover button span {
+    margin: auto;
+    /* font-family: Jost; */
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.sliderKartochka {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.slidesKartochka {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 400%;
+    height: 100%;
+    /* border: 1px red solid; */
+}
+
+.slideKartochka {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slideKartochka #tatu {
+    width: 100%;
+    height: 100%;
+}
+
+.navigationKartochka {
+
+
+    display: flex;
+    flex-direction: row;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.barKartochka {
+    display: flex;
+    height: 6px;
+    width: 6px;
+    margin: 0px 5px;
+    border: #524336 1px solid;
+
+}
+
+.navigationKartochka label {
+    cursor: pointer;
+}
+
+
+input[name="r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+
+
+
+input[name="r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}

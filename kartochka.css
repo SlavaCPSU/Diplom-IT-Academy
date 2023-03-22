@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+/* body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+'Segoe UI Symbol';
+} */
+
+.itc-container {
+    /* display: flex; */
+    /* max-width: 289px; */
+    /* margin: 0 auto; */
+    /* border: red solid 1px; */
+
+}
+
+.itc-slider-kartochka__items {
+    counter-reset: slide;
+}
+
+.itc-slider-kartochka__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    counter-increment: slide;
+    height: 250px;
+    position: relative;
+}
+
+.itc-slider-kartochka__item::before {
+    content: counter(slide) "/5";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.itc-slider-kartochka__indicator {
+    background-color: #eee;
+}
+
+.itc-slider-kartochka__indicator_active {
+    background-color: black;
+}
+
+/* .itc-slider-kartochka__item:nth-child(1) {
+background-color: #f44336;
+}
+
+.itc-slider-kartochka__item:nth-child(2) {
+background-color: #9c27b0;
+}
+
+.itc-slider-kartochka__item:nth-child(3) {
+background-color: #3f51b5;
+}
+
+.itc-slider-kartochka__item:nth-child(4) {
+background-color: #03a9f4;
+}
+
+.itc-slider-kartochka__item:nth-child(5) {
+background-color: #4caf50;
+} */
+
+
+.kartochka {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerProduct {
+    position: fixed;
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+    /* flex-basis: 289px; */
+    /* border: 1px solid blue; */
+    width: 229px;
+
+}
+
+.footerProduct p {
+
+    font-family: Jost Font;
+    font-size: 15px;
+    line-height: 19px;
+    color: #BB8C5F;
+    padding: 4px 18px 6px 10px;
+
+
+
+}
+
+.footerProduct a {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footerProduct div {
+
+    width: 85px;
+    /* height: 29px; */
+    background: url('./img/NewProduct.svg') no-repeat left;
+}
+
+.kartochkaProdukt {
+    display: flex;
+    flex-direction: column;
+    border: blue 1px solid;
+    max-width: 289px;
+    max-height: 454px;
+    background-color: #F5F5F5;
+
+}
+
+.kartochkaPodpis {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.kartochkaPodpis p {
+    font-family: Jost;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.kartochkaCena {
+    color: #BB8C5F;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 10%;
+}
+
+.kartochkaProdukt:hover {
+    max-height: 454px;
+
+
+}
+.kartochkaProdukt button {
+    display: none;
+}
+.kartochkaProdukt:hover  button {
+    /* display: block; */
+    margin: auto;
+    border: none;
+    color: #BB8C5F;
+    /* margin: auto; */
+    display: flex;
+    height: 50px;
+    width: 259px;
+    background: url('./img/Rectangle 68.svg') no-repeat center;
+    cursor: pointer;
+     
+}
+.kartochkaProdukt:hover button span{
+    margin: auto;
+    font-family: Jost;
+    /* Font style: Regular */
+    font-size: 20px;
+    line-height: 30px;
+}

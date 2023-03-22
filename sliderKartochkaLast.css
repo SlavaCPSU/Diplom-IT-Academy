@@ -1,0 +1,403 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.productsSladers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 10px;
+    margin-top: 20px;
+    align-items: flex-start;
+
+
+    /* align-content: space-between; */
+
+    /* will-change: transform; */
+    /* height: 800px; */
+    /* border: 1px solid blue; */
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 768px) {
+    .productsSladers {
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .knopka{
+        display: none;
+    }
+}
+
+
+
+
+.kartochkaProdukt {
+    display: flex;
+    flex-direction: column;
+    /* border: blue 1px solid; */
+    max-width: 289px;
+    max-height: 454px;
+    background-color: #F5F5F5;
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
+    user-select: none;
+    will-change: transform;
+    margin: auto;
+    /* border: 1px solid red; */
+    /* align-content: center; */
+    transition: transform 0.5s ease;
+    margin-top: 10px;
+    
+}
+
+.kartochka {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* border: 1px green solid; */
+
+
+}
+
+.footerProduct {
+    position: absolute;
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+    /* flex-basis: 289px; */
+    /* border: 1px solid blue; */
+    width: 229px;
+    z-index: 2;
+    margin-left: 30px;
+
+}
+
+.footerProduct p {
+
+    font-family: Jost Font;
+    font-size: 15px;
+    line-height: 19px;
+    color: #BB8C5F;
+    padding: 4px 18px 6px 10px;
+    /* z-index: 2; */
+
+
+}
+
+.footerProduct a {
+    margin-top: auto;
+    margin-bottom: auto;
+    /* z-index: 2; */
+}
+
+.footerProduct div {
+
+    width: 85px;
+    /* height: 29px; */
+    background: url('./img/NewProduct.svg') no-repeat left;
+    /* z-index: 2; */
+}
+
+
+
+.kartochkaPodpis {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.kartochkaPodpis p {
+    font-family: Jost;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.kartochkaCena {
+    color: #BB8C5F;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 10%;
+}
+
+.kartochkaProdukt:hover {
+    max-height: 454px;
+    transform: scale(1.01);
+
+
+}
+
+.kartochkaProdukt button {
+    display: none;
+}
+
+.kartochkaProdukt:hover button {
+    /* display: block; */
+    margin: auto;
+    border: none;
+    color: #BB8C5F;
+    /* margin: auto; */
+    display: flex;
+    height: 50px;
+    width: 259px;
+    background: url('./img/Rectangle 68.svg') no-repeat center;
+    cursor: pointer;
+
+}
+
+.kartochkaProdukt:hover button span {
+    margin: auto;
+    /* font-family: Jost; */
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.sliderKartochka {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.slidesKartochka {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 400%;
+    height: 100%;
+    /* border: 1px red solid; */
+}
+
+.slideKartochka {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slideKartochka #tatu {
+    width: 100%;
+    height: 100%;
+}
+
+.navigationKartochka {
+
+
+    display: flex;
+    flex-direction: row;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.barKartochka {
+    display: flex;
+    height: 6px;
+    width: 6px;
+    margin: 0px 5px;
+    border: #524336 1px solid;
+
+}
+
+.navigationKartochka label {
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.knopka {
+    margin: auto;
+
+}
+
+.knopka button {
+    display: flex;
+
+    margin-top: 20px;
+
+    background-color: transparent;
+    cursor: pointer;
+    width: 275px;
+    height: 70px;
+    border: none;
+    background: url('./img/Rectangle 68.svg') no-repeat center;
+}
+
+/* .knopka button:hover {
+    background-image: url('./Home/Rectangle68.svg');
+
+}
+
+.knopka button:hover span {
+    background: none;
+    color: #FAF6F2;
+} */
+
+.knopka button span {
+
+    display: flex;
+    color: #BB8C5F;
+    font-family: Jost;
+    /* font-style: Regular; */
+    font-size: 20px;
+    margin: auto;
+    /* background: url('./Home/Line10.svg') repeat-x center bottom; */
+    padding-bottom: 3px;
+    line-height: 30px;
+}
+
+
+
+input[name="r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+input[name="1r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="1r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+input[name="2r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="2r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+input[name="3r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="3r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+input[name="4r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="4r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+
+input[name="5r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="5r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+input[name="6r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="6r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+
+input[name="7r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="7r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}
+
+input[name="8r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+input[name="8r"]:checked~.f1 {
+    /* background-color: #BB8C5F; */
+    background-color: black;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+}

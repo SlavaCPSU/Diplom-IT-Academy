@@ -1,0 +1,318 @@
+article,
+article div {
+    /* border: solid red 1px; */
+}
+
+.katalog {
+    background-color: black;
+    /* margin-top: 160px; */
+    /* width: 100%; */
+    height: 700px;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.divKatalog {
+    margin: 0px;
+    flex-basis: 1216px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    background: url('./Home/Bg2.jpg') no-repeat 50% 100%;
+    flex-wrap: wrap;
+}
+
+.divKatalogOne {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 594px;
+
+}
+
+
+
+.katalogBest {
+    display: flex;
+    font-family: Forum;
+    font-style: Regular;
+    font-size: 75px;
+    line-height: 75px;
+    color: #BB8C5F;
+padding-left: 5px;
+    margin-top: 110px;
+    /* margin-left: 20px; */
+    /* height: 150px; */
+    /* border: red solid 1px; */
+}
+
+.katalogRas {
+    display: flex;
+    /* width: 431px; */
+    margin-top: 30px;
+    /* margin-left: 20px; */
+    font-family: Jost;
+    font-style: Regular;
+    font-size: 25px;
+    color: #FAF6F2;
+    /* border: blue solid 1px; */
+    padding-left: 5px;
+}
+
+.divKatalog button {
+    display: flex;
+    /* border: blue solid 1px; */
+    margin-top: 60px;
+    /* margin-left: 20px; */
+    background-color: transparent;
+    cursor: pointer;
+    width: 275px;
+    height: 70px;
+    
+}
+.divKatalog button:hover{
+    background-image: url('./Home/Rectangle68.svg');
+
+}
+
+.divKatalog button:hover span{
+    background: none;
+    color: #FAF6F2;
+}
+.divKatalog button span {
+    
+    display: flex;
+    color: #BB8C5F;
+    font-family: Jost;
+    /* font-style: Regular; */
+    font-size: 20px;
+    margin: auto;
+    background: url('./Home/Line10.svg') repeat-x center bottom;
+    padding-bottom: 3px;
+}
+
+/* .divKatalogTwo {
+    display: flex;
+    background: url('./Home/Bg2a.png') ;
+    flex-basis: 622px;
+    height: 700px;
+    
+    justify-content: space-between;
+
+
+} */
+
+.slider {
+    /* display: flex; */
+    /* border: green solid 5px; */
+    overflow: hidden;
+    max-width: 582px;
+    height: 700px;
+}
+
+
+.navigation {
+    /* border: blue solid 1px; */
+    /* position: absolute; */
+    /* right: 16px; */
+    /* bottom: 40%; */
+    /* top: 40%; */
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bar {
+    display: flex;
+
+    height: 16px;
+    width: 16px;
+    margin: 15px 12px;
+    /* cursor: pointer; */
+
+    /* background-color: gray; */
+    /* opacity: 0.8; */
+    /* border-radius: 10px; */
+    /* transition: all 4s ease; */
+    border: #524336 1px solid;
+
+}
+
+.navigation label {
+    cursor: pointer;
+}
+
+/* .bar:hover p {
+    background-color: #BB8C5F;
+    margin: auto;
+    width: 8.5px;
+    height: 8.5px;
+    transform: scale(1.2);
+
+} */
+
+
+.slides {
+    display: flex;
+    /* flex-direction:column-reverse; */
+    width: 500%;
+    height: 100%;
+    /* overflow: scroll; */
+    /* border: rebeccapurple solid 5px; */
+}
+
+.slide {
+    width: 20%;
+    /* transition: 6s; */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* border:wheat solid 2px; */
+}
+
+
+input[name="r"] {
+
+    position: absolute;
+    visibility: hidden;
+}
+
+
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+input[name="r"]:checked~.f1 {
+    background-color: #BB8C5F;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+}
+
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+}
+
+/* @media all and (max-width: 1100px) {
+    .katalogBest {
+
+
+        margin-top: 48px;
+
+    }
+
+} */
+
+
+
+@media all and (max-width: 768px) {
+    .katalog {
+        /* margin-top: 80px; */
+        flex-direction: column;
+        height: 768px;
+        background: url('./Home/Bg2.jpg') no-repeat 50% 100%;
+        background-color: black;
+    }
+
+    .navigation label img {
+        display: none;
+    }
+
+
+    .divKatalog {
+        margin: 0px;
+        flex-basis: 1216px;
+        height: 580px;
+        display: flex;
+        justify-content: space-between;
+        background-image: none;
+    }
+
+
+    .katalogBest {
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 48px;
+
+    }
+
+    .divKatalog button {
+
+        margin-top: 40px;
+
+    }
+
+
+    .navigation {
+        /* height: 40px; */
+
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+
+        margin-bottom: 60px;
+    }
+
+    .bar {
+
+        margin: 12px 15px;
+
+        border: #524336 1px solid;
+
+    }
+}
+
+@media all and (max-width: 320px) {
+    .katalog {
+        height: 635px;
+        background-image: none;
+        background-color: black;
+    }
+
+    .divKatalog {
+        background: url('./Home/Bg1.jpg') no-repeat;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .katalogBest {
+        margin-top: 321px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .katalogRas {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .divKatalog button {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+
+    }
+
+}

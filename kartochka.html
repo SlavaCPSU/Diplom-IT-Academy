@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kartochka</title>
+
+    <style>
+        .kartochka {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .footerProduct {
+            position: fixed;
+            display: flex;
+            /* align-content: center; */
+            justify-content: space-between;
+            /* flex-basis: 289px; */
+            border: 1px solid blue;
+            width: 229px;
+
+
+
+        }
+
+        .footerProduct p {
+
+            font-family: Jost Font;
+            font-size: 15px;
+            line-height: 19px;
+            color: #BB8C5F;
+            padding: 4px 18px 6px 10px;
+
+
+
+        }
+
+        .footerProduct a {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .footerProduct div {
+            
+            width: 85px;
+            height: 29;
+            background: url('./img/NewProduct.svg') no-repeat left;
+        }
+    </style>
+
+    <script>
+        function changeHeat() {
+            if (document.getElementById('heat').src == './img/heart1.svg') {
+                document.getElementById('heat').src = './img/heart2.svg';
+            } else {
+                document.getElementById('heat').src = './img/heart1.svg';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="kartochka">
+        <div class="footerProduct">
+            <div>
+                <p>Новинка</p>
+            </div>
+            <img  onclick="changeHeat" id="heat" src='./img/heart1.svg' alt="" style="cursor: pointer;">
+
+        </div>
+
+        <div>
+            <img src="./img/tatu1.jpg" alt="tatu1">
+        </div>
+    </div>
+
+</body>
+
+</html>

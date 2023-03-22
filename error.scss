@@ -1,0 +1,176 @@
+.error {
+    * {
+        border: red 1px solid;
+    }
+
+    // margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    height: 762px;
+
+    .errorCenter {
+        display: flex;
+        flex-basis: 1216px;
+        background: url('./Home/Error.jpg') no-repeat right;
+
+        .errorCenterText {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+            p:nth-child(1) {
+                display: flex;
+                font-family: Forum;
+                // Font style: Regular
+                font-size: 75px;
+                line-height: 75px;
+                color: #BB8C5F;
+            }
+
+            p:nth-child(2) {
+                margin-top: 20px;
+                display: flex;
+                max-width: 399px;
+                font-family: Jost;
+                // Font style: Regular
+                font-size: 25px;
+                line-height: 35px;
+                color: #3E424B;
+
+            }
+        }
+
+        form {
+            display: flex;
+            margin-top: 50px;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        button {
+            display: flex;
+
+            background-color: transparent;
+            margin-right: 43px;
+            cursor: pointer;
+            height: 70px;
+            width: 305px;
+            margin-left: -25px;
+
+            span {
+
+                margin: auto;
+                padding-bottom: 3px;
+                font-family: Jost;
+                // font-style: Regular;
+                font-size: 20px;
+                line-height: 30px;
+                color: #BB8C5F;
+                background: url('./Home/Line 10.svg') repeat-x center bottom;
+            }
+
+        }
+
+        button:hover span {
+            background: none;
+            color: #FAF6F2;
+        }
+
+        button:hover {
+            background-image: url('./Home/Rectangle 68 (1).svg');
+        }
+
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .error {
+        // margin-top: 80px;
+        height: 579px;
+
+        .errorCenter {
+            background-position: bottom right;
+            background-size: 384px auto;
+
+        }
+
+        .errorCenterText {
+            // margin: auto;
+        }
+
+
+
+        form {
+            flex-direction: column;
+
+
+            button {
+                margin-left: 0;
+                margin: auto;
+            }
+
+        }
+
+
+
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .error {
+        justify-content: flex-start;
+        height: 737px;
+
+
+
+        .errorCenter {
+
+
+            flex-direction: column;
+            background-position: bottom;
+            background-size: auto 358px;
+            margin-top: 60px;
+
+            .errorCenterText {
+                form {
+                    max-width: ;
+                    margin-top: 30px;
+
+                    button {
+                        margin-left: 0;
+                        margin: auto;
+
+                        p:nth-child(1) {
+                            font-size: 35px;
+                            line-height: 35px
+                        }
+                    }
+
+
+
+
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+    // .errorCenterText {
+    //     margin: auto;
+    // }
+
+
+
+}

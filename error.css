@@ -1,0 +1,106 @@
+.error {
+  /* margin-top: 160px; */
+  display: flex;
+  justify-content: center;
+  height: 762px;
+}
+/* .error * {
+  border: red 1px solid;
+} */
+ .errorCenter {
+  display: flex;
+  flex-basis: 1216px;
+  background: url("./Home/Error.jpg") no-repeat right;
+}
+ .errorCenterText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.errorCenterText p:nth-child(1) {
+  display: flex;
+  font-family: Forum;
+  font-size: 75px;
+  line-height: 75px;
+  color: #BB8C5F;
+}
+.errorCenterText p:nth-child(2) {
+  margin-top: 20px;
+  display: flex;
+  max-width: 399px;
+  font-family: Jost;
+  font-size: 25px;
+  line-height: 35px;
+  color: #3E424B;
+}
+ .errorCenter form {
+  display: flex;
+  margin-top: 50px;
+}
+.errorCenter button {
+  display: flex;
+  background-color: transparent;
+  margin-right: 43px;
+  cursor: pointer;
+  height: 70px;
+  width: 305px;
+  
+}
+.errorCenter button span {
+  margin: auto;
+  padding-bottom: 3px;
+  font-family: Jost;
+  font-size: 20px;
+  line-height: 30px;
+  color: #BB8C5F;
+  background: url("./Home/Line10.svg") repeat-x center bottom;
+}
+ .errorCenter button:hover span {
+  background: none;
+  color: #FAF6F2;
+}
+.errorCenter button:hover {
+  background-image: url("./Home/Rectangle68-1.svg");
+}
+
+
+@media all and (max-width: 768px) {
+  .error {
+    /* margin-top: 80px; */
+    height: 579px;
+  }
+  .error .errorCenter {
+    background-position: bottom right;
+    background-size: 384px auto;
+  }
+ 
+  .error form {
+    flex-direction: column;
+  }
+  .error button {
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 320px) {
+  .error {
+    justify-content: flex-start;
+    height: 737px;
+  }
+  .error .errorCenter {
+    flex-direction: column;
+    background-position: bottom;
+    background-size: auto 358px;
+    margin-top: 60px;
+  }
+  .error .errorCenter form {
+    margin-top: 30px;
+  }
+  .errorCenterText p:nth-child(1) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .error button {
+    margin: auto !important;
+   
+  }
+}/*# sourceMappingURL=error.css.map */

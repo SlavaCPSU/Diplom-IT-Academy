@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    transition: 0.5s;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FAF6F2;
+}
+
+a:hover,
+.menuUpPhone a:hover svg,
+.menuUpMail a:hover svg {
+    color: #BB8C5F;
+    fill: #BB8C5F;
+    stroke: #BB8C5F;
+
+}
+
+
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #FAF6F2;
+    height: 160px;
+}
+
+.menuFirst {
+    display: flex;
+    justify-content: center;
+    background: url('./Home/dividers.svg') no-repeat bottom;
+    padding: 14px;
+}
+
+.menuSecond {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menuUp {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1216px;
+    justify-content: space-between;
+    height: 66px;
+    top: 14px;
+
+}
+
+.menuUpOne {
+    display: flex;
+    flex-basis: 373px;
+    justify-content: space-between;
+}
+
+.menuUpKontakt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.menuUpMail,
+.menuUpPhone {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: right;
+
+
+
+}
+
+.menuUpMessendger {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+
+
+.menuUpKonvert {
+
+    fill: white;
+    text-anchor: initial;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+
+}
+
+.menuUpMr {
+    width: 220px;
+}
+
+.menuUpMr span {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    color: #BB8C5F;
+
+    text-transform: uppercase;
+    text-align: center;
+
+
+    background: url('./Home/Line26.svg') no-repeat center bottom;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 11px;
+    /* border: 1px solid red; */
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.menuUpMr p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #BB8C5F;
+}
+
+.menuUpRight {
+    display: flex;
+    flex-basis: 250px;
+    justify-content: space-between;
+    flex-shrink: 2.7
+}
+
+.menuUpBasket {
+    display: flex;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.menuUpBasket a {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    flex-shrink: 5;
+}
+
+.menuDown {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1216px;
+    Height: 55px;
+    justify-content: space-between;
+}
+
+.menuDownFirst {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.menuDownFirst li {
+    display: flex;
+    font-family: Jost;
+    font-style: Regular;
+    font-size: 17px;
+    line-height: 26px;
+
+}
+
+.menuDownKatolog {
+    font-family: Jost;
+    font-size: 25px;
+    line-height: 35px;
+    display: flex;
+
+}
+
+.menuDownLi {
+    display: flex;
+    flex-basis: 560px;
+    justify-content: space-around;
+}
+
+#menuPoisk {
+    flex-basis: 418px;
+}
+
+#menuPoisk form {
+    display: flex;
+    flex-basis: 418px;
+}
+
+@media all and (max-width: 768px) {
+
+    /* *{
+    transition: 1s;
+} */
+    #menuHeaden,
+    #menuHeaden li {
+        display: none;
+    }
+
+    header {
+
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 80px;
+
+
+
+
+    }
+
+    .menuFirst {
+        flex-direction: row;
+        justify-content: flex-end;
+        order: 2;
+        flex-basis: 100%;
+        flex-shrink: 1.48;
+        padding: 0px;
+        background-image: none;
+
+    }
+
+    .menuSecond {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        order: 1;
+        flex-basis: 100%;
+
+    }
+
+    .menuUp {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-basis: none;
+        height: auto;
+        top: auto;
+        order: 2;
+    }
+
+    .menuDown {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        Height: auto;
+        order: 1;
+        flex-basis: 448px;
+
+    }
+
+    .menuDownKatolog {
+        /* order: 1; */
+        /* flex-direction: row;
+        justify-content: flex-start; */
+        flex-basis: 120px;
+    }
+
+    #menuPoisk {
+        /* order: 2; */
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-basis: 274px;
+        flex-shrink: 1;
+
+    }
+
+    .menuUpRight {
+        flex-basis: 270px;
+        flex-shrink: 20;
+
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    #menuPoisk,
+    #menuHeaden320 {
+        display: none;
+    }
+
+    #menuBasket {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

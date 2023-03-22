@@ -1,0 +1,379 @@
+/* * {
+    border: solid 1px gainsboro;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+    flex-basis: 1216px;
+    height: 400px;
+
+    /* justify-content: center; */
+}
+
+
+
+.footerLeft {
+    display: flex;
+    flex-basis: 721px;
+    /* border: red 3px solid; */
+
+}
+
+.footerLeftCentr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    /* flex-wrap: wrap; */
+    /* border: green 2px solid; */
+    margin-top: 139px;
+    height: 141px;
+    flex-basis: 721px;
+
+}
+
+.footerMrPolitic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 141px;
+    /* border: red 1px solid; */
+    /* flex-basis: 242px; */
+
+}
+
+.footerMr {
+    /* width: 238px; */
+    
+    /* border: red 1px solid; */
+}
+
+.footerPolitic {
+    width: 247px;
+    font-family: Montserrat;
+    /* font-style: Medium; */
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 5px;
+}
+
+.footerMr p:nth-child(1) {
+    font-family: Forum;
+    /* font-style: Regular; */
+    font-size: 30px;
+    line-height: 39px;
+    /* width: 250px; */
+    padding-bottom: 5px;
+    /* padding-left: 11px;
+    padding-right: 11px; */
+    color: #BB8C5F;
+    text-transform: uppercase;
+    text-align: center;
+    background: url('./Home/Line9.svg') no-repeat center bottom;
+    /* border: blue 1px solid; */
+}
+
+.footerMr p:nth-child(2) {
+    font-family: Jost;
+    /* font-style: Light; */
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #BB8C5F;
+    /* width: 200px; */
+    /* align-items: center; */
+
+}
+
+
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-content: space-around;
+    height: 161px;
+
+    flex-basis: 432px;
+
+    /* border: blue solid 3px; */
+}
+
+.footerMenu li {
+    /* border: red solid 1px; */
+    /* display: flex; */
+    font-family: Jost;
+    /* font-style: Regular; */
+    font-size: 20px;
+    line-height: 27px;
+    /* flex-basis: max-content; */
+    margin-bottom: 22.6px;
+
+
+
+}
+
+.footerRight {
+    display: flex;
+    flex-basis: 495px;
+    border-left: #524336 solid 1px;
+    flex-direction: column;
+
+
+}
+
+.footerPhone {
+    display: flex;
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* align-content: baseline; */
+    margin-left: 102px;
+    margin-top: 134px;
+    flex-wrap: wrap;
+   
+  
+
+}
+.footerPhone1{
+   min-width: 185px;
+   /* border: #BB8C5F 1px solid; */
+   margin-right: 25px;
+}
+.footerPhone2 {
+    /* margin-left: 25px; */
+
+    
+}
+
+.footerPhone1 a:nth-child(1) {
+    /* vertical-align: middle; */
+}
+
+.footerRightTime {
+
+    margin-top: 152x;
+    font-family: Jost;
+    /* font-style: Regular; */
+    font-size: 17px;
+    line-height: 26px;
+    color: #636B78;
+    margin-left: 102px;
+    margin-top: 12px;
+}
+
+.footerMail {
+
+    /* font-style: Regular */
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-left: 102px;
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: 561px;
+    }
+
+    .footerLeft {
+        height: 281px;
+        flex-basis: 768px;
+    }
+
+    .footerLeftCentr {
+
+        /* border: green 2px solid; */
+        margin-top: 70px;
+
+        flex-basis: 768px;
+    }
+
+    .footerRight {
+        height: 280px;
+        flex-basis: auto;
+        margin-left: 25px;
+        border-left: none;
+    }
+
+    .footerPhone {
+        margin-top: 75px;
+        margin-left: 25px;
+    }
+
+    .footerRightTime {
+
+        margin-left: 25px;
+    }
+
+    .footerMail {
+        margin-left: 25px;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+
+    .footer {
+        flex-direction: column;
+        height: 701px;
+    }
+
+    .footerLeft {
+        height: 380px;
+        flex-basis: 320px;
+        align-content: center;
+
+    }
+
+    .footerLeftCentr {
+        flex-direction: column;
+        margin-top: 56px;
+
+        flex-basis: 320px;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .footerMrPolitic {
+        height: auto;
+        align-content: center;
+
+        /* border: 1px solid wheat; */
+        flex-basis: auto;
+    }
+
+    .footerMr {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        /* border: 1px solid red; */
+        flex-basis: auto;
+    }
+
+    .footerMr p {
+        margin: auto;
+        text-align: center;
+        /* border: 1px solid blue; */
+
+    }
+
+    .footerPolitic {
+        display: none;
+    }
+
+    .footerRight {
+        height: 321px;
+        flex-basis: 320px;
+        margin-left: 17px;
+    }
+
+    .footerPhone2 {
+        margin-top: 25px;
+    }
+
+    .footerMenu {
+        margin-top: 40px;
+        align-content: space-around;
+        height: 129px;
+        flex-basis: 320px;
+    }
+    .footerMenu li{
+        margin-bottom: 28px;
+    }
+    .footerPhone {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 65px;
+    }
+
+    .footerRightTime p {
+        font-stretch: ultra-condensed;
+        font-family: Jost;
+        /* font-style: Regular; */
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .footerPhone {
+
+        margin-left: 17px;
+
+    }
+
+    .footerPhone2 {
+        margin-left: 0px;
+    }
+
+
+    .footerRightTime {
+
+        margin-left: 17px;
+    }
+
+    .footerMail {
+        margin-left: 17px;
+    }
+
+
+}
+
+
+/* 
+@media all and (max-width: 475px) {
+
+    .footerLeft {
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .footerLeftCentr {
+        flex-direction: column;
+
+
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .footerMrPolitic {
+        height: auto;
+
+       
+        flex-basis: auto;
+        margin: auto;
+    }
+
+    .footerMr {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+       
+        flex-basis: auto;
+    }
+
+    .footerMr p {
+        margin: auto;
+        text-align: center;
+       
+
+    }
+
+    .footerPolitic {
+        display: none;
+    }
+
+}
+ */
